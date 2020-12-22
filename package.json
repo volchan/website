@@ -21,7 +21,7 @@
     "build": "NODE_ENV=production yarn watch:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:css": "postcss src/assets/tailwind.css -o src/assets/index.css",
+    "watch:css": "postcss src/assets/tailwind_config.css -o src/assets/tailwind.css",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
