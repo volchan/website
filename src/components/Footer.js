@@ -4,7 +4,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   return (
-    <div className="h-10 bg-gray-900 flex items-center px-20 font-medium">
+    <div className="h-96 bg-gray-900 flex items-center px-20 font-medium">
       <p className="m-0 text-gray-500 tracking-tight">
         Dévellopé avec <FontAwesomeIcon icon={faHeart} className="text-indigo-500" /> par
       </p>
