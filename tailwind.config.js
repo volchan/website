@@ -8,7 +8,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      padding: ['last'],
+    },
   },
   plugins: [require('tailwindcss-textshadow')],
 };
