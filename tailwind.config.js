@@ -1,7 +1,11 @@
 module.exports = {
   purge: ['./public/**/*.html', './src/**/*.js', './src/**/*.jsx'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        body: '#070610',
+      },
+    },
   },
   variants: {
     extend: {},
