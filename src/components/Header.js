@@ -6,9 +6,10 @@ import HeaderBackground from '../assets/images/header_background.png';
 
 const Header = () => {
   return (
-    <div
+    <header
       className="relative flex flex-col items-center justify-center h-screen w-full bg-cover bg-center text-gray-100"
       style={{ backgroundImage: `url(${HeaderBackground})` }}
+      id="home"
     >
       <h1 className="font-bold tracking-tight text-shadow-md text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
         Stéphane DE LA TORRE
@@ -35,7 +36,7 @@ const Header = () => {
           <FontAwesomeIcon icon={faGithub} />
         </a>
       </div>
-    </div>
+    </header>
   );
 }
 
