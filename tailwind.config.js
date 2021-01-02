@@ -6,8 +6,8 @@ module.exports = {
         body: '#070610',
       },
       textShadow: {
-        'header': '0px 1px 3px rgba(0, 0, 0, .8)',
-     }
+        header: '0px 1px 3px rgba(0, 0, 0, .8)',
+      },
     },
   },
   variants: {
@@ -15,6 +15,7 @@ module.exports = {
       animation: ['motion-safe'],
       padding: ['last'],
       margin: ['last'],
+      textColor: ['visited'],
     },
   },
   plugins: [require('tailwindcss-textshadow')],
