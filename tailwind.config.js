@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       animation: ['motion-safe'],
       padding: ['last'],
+      margin: ['last'],
     },
   },
   plugins: [require('tailwindcss-textshadow')],
