@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import HeaderBackground from '../assets/images/header_background.png';
 
@@ -20,11 +20,14 @@ const Header = () => {
         <br className="block md:hidden" /> passionné touche à tout la nuit.
       </p>
       <div className="mt-7">
+        <a href="mailto:contact@s-dlt.fr" className="hover:text-indigo-500 text-xl lg:text-2xl">
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
         <a
           href="https://www.linkedin.com/in/st%C3%A9phane-de-la-torre-b748a3144/"
           target="_blank"
           rel="noopener noreferrer"
-          className=" hover:text-indigo-500 text-xl lg:text-2xl"
+          className="ml-4 hover:text-indigo-500 text-xl lg:text-2xl"
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
@@ -38,7 +41,10 @@ const Header = () => {
         </a>
       </div>
 
-      <FontAwesomeIcon icon={faChevronDown} className="text-xl absolute bottom-16 sm:bottom-10 mx-auto motion-safe:animate-bounce" />
+      <FontAwesomeIcon
+        icon={faChevronDown}
+        className="text-xl absolute bottom-16 sm:bottom-10 mx-auto motion-safe:animate-bounce"
+      />
     </header>
   );
 }
