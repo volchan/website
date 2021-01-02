@@ -1,9 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faChevronDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import HeaderBackground from '../assets/images/header_background.png';
+import Socials from './Socials';
 
 const Header = () => {
   return (
@@ -19,27 +19,8 @@ const Header = () => {
         Développeur Fullstack Ruby on Rails basé à Bordeaux le jour,
         <br className="block md:hidden" /> passionné touche à tout la nuit.
       </p>
-      <div className="mt-7">
-        <a href="mailto:contact@s-dlt.fr" className="hover:text-indigo-500 text-xl lg:text-2xl">
-          <FontAwesomeIcon icon={faEnvelope} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/st%C3%A9phane-de-la-torre-b748a3144/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-4 hover:text-indigo-500 text-xl lg:text-2xl"
-        >
-          <FontAwesomeIcon icon={faLinkedinIn} />
-        </a>
-        <a
-          href="https://github.com/volchan"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-4 hover:text-indigo-500 text-xl lg:text-2xl"
-        >
-          <FontAwesomeIcon icon={faGithub} />
-        </a>
-      </div>
+      
+      <Socials classes="mt-7" />
 
       <FontAwesomeIcon
         icon={faChevronDown}
