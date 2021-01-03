@@ -16,6 +16,8 @@ const Navbar = () => {
     const isVisible = ((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 70);
     const isHome = activeTab === 'home'
 
+    console.log(activeTab);
+    
     setVisible(isVisible || !isHome);
 
     if (isHome) setBackgroundClasses('');

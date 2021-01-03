@@ -8,13 +8,16 @@ module.exports = {
       textShadow: {
         header: '0px 1px 3px rgba(0, 0, 0, .8)',
       },
+      fontSize: {
+        xxs: '.60rem',
+      },
     },
   },
   variants: {
     extend: {
       animation: ['motion-safe'],
       padding: ['last'],
-      margin: ['last'],
+      margin: ['first', 'last'],
       textColor: ['visited'],
     },
   },
