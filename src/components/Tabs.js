@@ -15,7 +15,9 @@ const Tabs = () => {
 
   return (
     <>
-      {tabs.map(({ label, hashLink }) => <Tab key={label} label={label} hashLink={hashLink} />)}
+      {tabs.map(({ label, hashLink }) => (
+        <Tab key={label} label={label} hashLink={hashLink} />
+      ))}
     </>
   );
 };
