@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Experiences from './components/Experiences';
 import Skills from './components/Skills';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 import { Provider as ExpProvider } from './context/experienceContext';
@@ -23,7 +22,6 @@ const App = () => {
       <SkillProvider>
         <Skills />
       </SkillProvider>
-      <Contact />
       <Footer />
     </div>
   );

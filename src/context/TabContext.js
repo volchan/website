@@ -20,27 +20,23 @@ export const { Context, Provider } = createDataContext(
   tabReducer,
   { changeTab },
   {
-    activeTab: '#home',
+    activeTab: 'home',
     tabs: [
       {
         label: 'accueil',
-        hashLink: '#home',
+        hashLink: 'home',
       },
       {
         label: 'à propos',
-        hashLink: '#about',
+        hashLink: 'about',
       },
       {
         label: 'expérience',
-        hashLink: '#experience',
+        hashLink: 'experience',
       },
       {
         label: 'compétences',
-        hashLink: '#skills',
-      },
-      {
-        label: 'contact',
-        hashLink: '#contact',
+        hashLink: 'skills',
       },
     ],
   },
